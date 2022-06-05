@@ -26,70 +26,94 @@
     <style>
       body {
         font-family: "Poppins", sans-serif;
+      
       }
-
-      ul {
-        padding-left: 24px;
+      .main {
+      
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* align-items: center; */
+        height: 500px;
+        overflow: hidden;
       }
-
-      li {
-        margin-bottom: 8px;
+      .left {
+        width: 400px;
+        margin: 20px;
+        position: relative;
+        right: 80px;
       }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
+      img {
+        width: 540px;
+        height: 447px;
+        position: relative;
+        right:150px;
       }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
+      .newline {
+        display: block;
       }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
+      .paragraph {
+        width: 220px;
       }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
+      button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 20px;
+        margin:20px 0;
       }
+      .footer {
+        position: absolute;
+        bottom :0;
+        width:100%;
+        height:60px;
+      }
+      .footer p {
+        text-align: center;
+      }
+      @media only screen and (max-width:768px) {
+        .main{
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+        }
 
-      .welcome-text a {
-        color: #f7542e;
+        img{
+          width:60%;
+          height:100%;
+          position:relative;
+          left:180px;
+          top:40px;
+        }
+        .left{
+          margin:20px;
+        }
+        .footer p{
+          text-align:center;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <h1>404 NOT FOUND</h1>
+    <div class="main">
+      <div class="left">
+        <img src="./Scarecrow.png" alt="" />
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <div class="right">
+        <h1>I have bad news <span class="newline">for you</span></h1>
+        <p class="paragraph">
+          The page you are looking for might be removed or is temporarily
+          unavailable
+        </p>
+        <button>BACK TO HOMEPAGE</button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>created by pranish</p>
     </div>
   </body>
 </html>
